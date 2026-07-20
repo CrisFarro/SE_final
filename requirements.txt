@@ -1,0 +1,6 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+flask==3.0.2
+gunicorn==21.2.0
+pandas==2.2.1
+pgmpy==0.1.25
+torch==2.2.1+cpu
