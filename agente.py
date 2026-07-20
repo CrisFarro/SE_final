@@ -1,12 +1,12 @@
 import os
 import pandas as pd
-from pgmpy.models import DiscreteBayesianNetwork
+from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
 
 class AgenteBayesianoAdquisiciones:
     def __init__(self):
-        self.model = DiscreteBayesianNetwork([
+        self.model = BayesianNetwork([
             ('Precio', 'Viabilidad'),
             ('Plazo', 'Viabilidad'),
             ('ISO', 'Viabilidad'),
